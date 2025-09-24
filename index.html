@@ -14,6 +14,7 @@
     <title>My Portfolio Website</title>
   </head>
   <body>
+    <div class="background"></div>
     <header>
       <div class="logo">
         <a href="index.html">Ashu</a>
@@ -96,6 +97,15 @@
         backSpeed: 100,
         loop: true,
       });
+      const bg = document.querySelector(".background");
+    for (let i = 0; i < 50; i++) {
+      let p = document.createElement("div");
+      p.className = "particle";
+      p.style.left = Math.random() * window.innerWidth + "px";
+      p.style.animationDuration = (5 + Math.random() * 5) + "s";
+      p.style.animationDelay = (Math.random() * 5) + "s";
+      bg.appendChild(p);
+    }
     </script>
   </body>
 </html>
