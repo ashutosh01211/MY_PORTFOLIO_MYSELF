@@ -11,23 +11,18 @@
     <title>My Portfolio Website</title>
 </head>
 <body>
-    <!-- ...existing code... -->
-<header>
-    <div class="logo">
-        <a href="index.html">Ashu</a>
-    </div>
-    <button class="hamburger" id="hamburger-menu" aria-label="Open navigation">
-        &#9776;
-    </button>
-    <nav>
-        <ul class="nav_links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">contact</a></li>
-        </ul>
-    </nav>
-</header>
-<!-- ...existing code... -->
+    <header>
+        <div class="logo">
+            <a href="index.html">Ashu</a>
+        </div>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section class="hero">
             <h1>Hello, I am Ashutosh</h1>
@@ -87,20 +82,6 @@
     typeSpeed: 150,
     backSpeed: 100,
     loop: true
-  });
-
-  // Hamburger menu functionality
-  const hamburger = document.getElementById('hamburger-menu');
-  const nav = document.querySelector('nav');
-  hamburger.addEventListener('click', function() {
-    nav.classList.toggle('open');
-  });
-
-  // Optional: Close menu when a link is clicked
-  document.querySelectorAll('.nav_links a').forEach(link => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('open');
-    });
   });
 </script>
 </body>
