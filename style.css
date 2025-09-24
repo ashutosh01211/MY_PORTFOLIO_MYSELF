@@ -28,126 +28,125 @@
 }
 body {
   font-family: "Spectral", serif;
-  background-color:black;
+  background-color: black;
   line-height: 1.6;
   color: white;
 }
 header {
   background: rgba(255, 255, 255, 0.1);
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 header .logo a {
   text-decoration: none;
-    font-size: 40px;
-    font-family: "Spectral", serif;
-    font-weight: 600;
-    color: white;
+  font-size: 40px;
+  font-family: "Spectral", serif;
+  font-weight: 600;
+  color: white;
 }
 .nav_links {
   list-style: none;
-    display: flex;
-    gap: 50px;
-    font-family: "Spectral", serif;
-    font-weight: 500;
-    font-size: 20px;
+  display: flex;
+  gap: 50px;
+  font-family: "Spectral", serif;
+  font-weight: 500;
+  font-size: 20px;
 }
 .nav_links li a {
   text-decoration: none;
-    color: white;
+  color: white;
 }
 .nav_links li a:hover {
-    color: #d0bdf4;
-    transition: 0.6s ease-in-out;
-    transform: scale(1.5);
+  color: #d0bdf4;
+  transition: 0.6s ease-in-out;
+  transform: scale(1.5);
 }
-.hero{
-    background: 
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("hero-img.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    width: 100%;
-    padding: 10px 10%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+  padding: 10px 10%;
 }
-.hero h1{
-    color: white;
-    font-size: 80px;
-    font-family: "Spectral", serif;
-    font-weight: 700;
-    text-align: center;
+.hero h1 {
+  color: white;
+  font-size: 80px;
+  font-family: "Spectral", serif;
+  font-weight: 700;
+  text-align: center;
 }
-.hero h2{
-    color: white;
-    font-size: 40px;
-    font-family: "Spectral", serif;
-    font-weight: 500;
-    text-align: center;
+.hero h2 {
+  color: white;
+  font-size: 40px;
+  font-family: "Spectral", serif;
+  font-weight: 500;
+  text-align: center;
 }
-.about{
-    margin-top: 50px;
-    padding: 10px 10%;
-    display: flex;
-    flex-direction: row;
-    width: 100%; 
+.about {
+  margin-top: 50px;
+  padding: 10px 10%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
-.about-left{
-    width: 50%;
-    padding: 10px;
-    border-right: 2px solid white;
+.about-left {
+  width: 50%;
+  padding: 10px;
+  border-right: 2px solid white;
 }
-.about-right{
-    width: 50%;
-    padding-left: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.about-right {
+  width: 50%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.about-right h2{
-    font-size: 40px;
-    font-family: "Spectral", serif;
-    font-weight: 600;
-    text-decoration: underline;
+.about-right h2 {
+  font-size: 40px;
+  font-family: "Spectral", serif;
+  font-weight: 600;
+  text-decoration: underline;
 }
-.about-right p{
-    font-size: 20px;
-    font-family: "Spectral", serif;
-    font-weight: 400;
-    text-align: justify;
+.about-right p {
+  font-size: 20px;
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  text-align: justify;
 }
-.profile-details{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    margin-bottom: 30px;
-    font-size: 25px;
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 30px;
+  font-size: 25px;
 }
-.progress-bar{
-    border-width: 0.5px;
-    border-style: solid;
-    border-color: white;
-    border-radius: 20px;
-    height: 25px;
-    width: 100%;
-    overflow: hidden;
-    background-color: transparent;
+.progress-bar {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 20px;
+  height: 25px;
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
 }
-progress .progress-bar{
+progress .progress-bar {
   background-color: transparent;
 }
 
@@ -165,52 +164,55 @@ progress.progress-bar::-moz-progress-bar {
 progress.progress-bar {
   color: white; /* Fallback for IE/Edge */
 }
-.contacts{
-    background: rgba(255, 255, 255, 0.1);
-    margin-top: 50px;
-    padding: 10px 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.4);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+.contacts {
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 50px;
+  padding: 10px 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
-.contact-icons{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
+.contact-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
-#address, #email, #phone{
-    color: white;
-    font-size: 20px;
-    font-family: "Spectral", serif;
-    font-weight: 500;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+#address,
+#email,
+#phone {
+  color: white;
+  font-size: 20px;
+  font-family: "Spectral", serif;
+  font-weight: 500;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
-footer{
-    background: rgba(255, 255, 255, 0.1);
-    margin-top: 50px;
-    padding: 10px 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-} footer p{
-    color: white;
-    font-size: 15px;
-    font-family: "Spectral", serif;
-    font-weight: 400;
+footer {
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 50px;
+  padding: 10px 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+footer p {
+  color: white;
+  font-size: 15px;
+  font-family: "Spectral", serif;
+  font-weight: 400;
 }
 /* Media Queries for responsiveness */
 /* ...existing code... */
@@ -226,7 +228,8 @@ footer{
   .contacts {
     padding: 10px 5%;
   }
-  .about-left, .about-right {
+  .about-left,
+  .about-right {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -269,7 +272,8 @@ footer{
     flex-direction: column;
     padding: 10px 3%;
   }
-  .about-left, .about-right {
+  .about-left,
+  .about-right {
     width: 100%;
     border: none;
     padding: 0;
@@ -293,7 +297,9 @@ footer{
     gap: 10px;
     align-items: flex-start;
   }
-  #address, #email, #phone {
+  #address,
+  #email,
+  #phone {
     font-size: 16px;
     flex-direction: row;
     gap: 10px;
@@ -333,7 +339,9 @@ footer{
   .contacts h2 {
     font-size: 20px;
   }
-  #address, #email, #phone {
+  #address,
+  #email,
+  #phone {
     font-size: 12px;
   }
   footer p {
