@@ -1,0 +1,340 @@
+.spectral-regular {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.spectral-medium {
+  font-family: "Spectral", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.spectral-semibold {
+  font-family: "Spectral", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.spectral-bold {
+  font-family: "Spectral", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Spectral", serif;
+  background-color:black;
+  line-height: 1.6;
+  color: white;
+}
+header {
+  background: rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+header .logo a {
+  text-decoration: none;
+    font-size: 40px;
+    font-family: "Spectral", serif;
+    font-weight: 600;
+    color: white;
+}
+.nav_links {
+  list-style: none;
+    display: flex;
+    gap: 50px;
+    font-family: "Spectral", serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+.nav_links li a {
+  text-decoration: none;
+    color: white;
+}
+.nav_links li a:hover {
+    color: #d0bdf4;
+    transition: 0.6s ease-in-out;
+    transform: scale(1.5);
+}
+.hero{
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("hero-img.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    padding: 10px 10%;
+}
+.hero h1{
+    color: white;
+    font-size: 80px;
+    font-family: "Spectral", serif;
+    font-weight: 700;
+    text-align: center;
+}
+.hero h2{
+    color: white;
+    font-size: 40px;
+    font-family: "Spectral", serif;
+    font-weight: 500;
+    text-align: center;
+}
+.about{
+    margin-top: 50px;
+    padding: 10px 10%;
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+}
+.about-left{
+    width: 50%;
+    padding: 10px;
+    border-right: 2px solid white;
+}
+.about-right{
+    width: 50%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about-right h2{
+    font-size: 40px;
+    font-family: "Spectral", serif;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.about-right p{
+    font-size: 20px;
+    font-family: "Spectral", serif;
+    font-weight: 400;
+    text-align: justify;
+}
+.profile-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+.progress-bar{
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+    height: 25px;
+    width: 100%;
+    overflow: hidden;
+    background-color: transparent;
+}
+progress .progress-bar{
+  background-color: transparent;
+}
+
+/* Progress bar color for WebKit browsers */
+progress.progress-bar::-webkit-progress-value {
+  background-color: white; /* Change this to your desired color */
+}
+
+/* Progress bar color for Firefox */
+progress.progress-bar::-moz-progress-bar {
+  background-color: white; /* Change this to your desired color */
+}
+
+/* Progress bar color for IE/Edge */
+progress.progress-bar {
+  color: white; /* Fallback for IE/Edge */
+}
+.contacts{
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+    padding: 10px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+.contact-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+#address, #email, #phone{
+    color: white;
+    font-size: 20px;
+    font-family: "Spectral", serif;
+    font-weight: 500;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+    padding: 10px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+} footer p{
+    color: white;
+    font-size: 15px;
+    font-family: "Spectral", serif;
+    font-weight: 400;
+}
+/* Media Queries for responsiveness */
+/* ...existing code... */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  header {
+    padding: 10px 5%;
+  }
+  .about {
+    padding: 10px 5%;
+  }
+  .contacts {
+    padding: 10px 5%;
+  }
+  .about-left, .about-right {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hero h1 {
+    font-size: 60px;
+  }
+  .hero h2 {
+    font-size: 30px;
+  }
+}
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 3%;
+  }
+  .logo a {
+    font-size: 32px;
+  }
+  .nav_links {
+    gap: 20px;
+    font-size: 18px;
+    flex-wrap: wrap;
+  }
+  .hero {
+    height: 60vh;
+    padding: 10px 3%;
+  }
+  .hero h1 {
+    font-size: 36px;
+  }
+  .hero h2 {
+    font-size: 20px;
+  }
+  .about {
+    flex-direction: column;
+    padding: 10px 3%;
+  }
+  .about-left, .about-right {
+    width: 100%;
+    border: none;
+    padding: 0;
+  }
+  .about-right {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+  .profile-details {
+    font-size: 18px;
+  }
+  .skills-container h3 {
+    font-size: 22px;
+  }
+  .contacts {
+    padding: 10px 3%;
+    gap: 10px;
+  }
+  .contact-icons {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  #address, #email, #phone {
+    font-size: 16px;
+    flex-direction: row;
+    gap: 10px;
+  }
+  footer {
+    padding: 10px 3%;
+    font-size: 13px;
+  }
+}
+
+/* Small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero {
+    height: 40vh;
+  }
+  .hero h1 {
+    font-size: 24px;
+  }
+  .hero h2 {
+    font-size: 14px;
+  }
+  .about-right h2 {
+    font-size: 24px;
+  }
+  .about-right p {
+    font-size: 14px;
+  }
+  .profile-details {
+    font-size: 14px;
+  }
+  .skills-container h3 {
+    font-size: 16px;
+  }
+  .progress-bar {
+    height: 18px;
+  }
+  .contacts h2 {
+    font-size: 20px;
+  }
+  #address, #email, #phone {
+    font-size: 12px;
+  }
+  footer p {
+    font-size: 10px;
+  }
+}
