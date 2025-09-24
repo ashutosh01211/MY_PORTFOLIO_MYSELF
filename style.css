@@ -256,7 +256,7 @@ footer{
     flex-wrap: wrap;
   }
   .hero {
-    height: 60vh;
+    height: 90vh;
     padding: 10px 3%;
   }
   .hero h1 {
@@ -307,7 +307,7 @@ footer{
 /* Small mobile devices (max-width: 480px) */
 @media (max-width: 480px) {
   .hero {
-    height: 40vh;
+    height: 90vh;
   }
   .hero h1 {
     font-size: 24px;
