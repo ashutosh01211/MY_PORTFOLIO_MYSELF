@@ -191,18 +191,19 @@ progress.progress-bar {
   color: white; /* Fallback for IE/Edge */
 }
 .contacts {
-  background: rgba(255, 255, 255, 0.1);
-  margin-top: 50px;
+  background: white;
+  margin: 50px;
   padding: 10px 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.4);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  height: 40vh;
+}
+.contacts h2{
+  color: #000;
+  font-size: 3rem;
 }
 .contact-icons {
   display: flex;
@@ -212,7 +213,7 @@ progress.progress-bar {
 #address,
 #email,
 #phone {
-  color: white;
+  color: black;
   font-size: 20px;
   font-family: "Spectral", serif;
   font-weight: 500;
